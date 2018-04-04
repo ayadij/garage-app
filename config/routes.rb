@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'pages/home'
 
-  get 'pages/garage'
-
-  get 'pages/vin_decoder'
+  get 'home', to: 'pages#home'
+  get 'garage', to: 'pages#garage'
+  get 'vin-decoder', to: 'pages#vin_decoder'
 
   resources :vehicles
+
+  root to: 'pages#home'
 end
