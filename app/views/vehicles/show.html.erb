@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vehicle.name %>
+</p>
+
+<p>
+  <strong>Model year:</strong>
+  <%= @vehicle.model_year %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @vehicle.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @vehicle.model %>
+</p>
+
+<p>
+  <strong>Trim level:</strong>
+  <%= @vehicle.trim_level %>
+</p>
+
+<p>
+  <strong>Body style:</strong>
+  <%= @vehicle.body_style %>
+</p>
+
+<p>
+  <strong>Engine type:</strong>
+  <%= @vehicle.engine_type %>
+</p>
+
+<p>
+  <strong>Milage:</strong>
+  <%= @vehicle.milage %>
+</p>
+
+<p>
+  <strong>Vin:</strong>
+  <%= @vehicle.vin %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @vehicle.notes %>
+</p>
+
+<p>
+  <strong>Bought date:</strong>
+  <%= @vehicle.bought_date %>
+</p>
+
+<p>
+  <strong>Bought milage:</strong>
+  <%= @vehicle.bought_milage %>
+</p>
+
+<p>
+  <strong>Bought price:</strong>
+  <%= @vehicle.bought_price %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>
