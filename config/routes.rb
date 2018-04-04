@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+
+  get 'pages/garage'
+
+  get 'pages/vin_decoder'
+
   resources :vehicles
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

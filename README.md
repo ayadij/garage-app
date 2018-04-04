@@ -12,18 +12,18 @@
 
 ### Generate Vehicle
 name:string 
-model_year:integer 
+model_year:bigint 
 make:string 
 model:string 
 trim_level:string 
 body_style:string 
 engine_type:string 
-milage:integer 
+milage:bigint 
 vin:string 
 notes:text 
 bought_date:date 
-bought_milage:integer 
-bought_price:integer
+bought_milage:bigint 
+bought_price:bigint
 
 
 ### Pages
