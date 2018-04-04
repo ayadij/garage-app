@@ -1,14 +1,14 @@
 # README
 
-Rails Web Application
-Ruby 2.4.0
-Database: PostgreSQL
-CRUD for vehicle entires
-Devise for Authentication
-Petergate
-Bootstrap
-Carrierwave for photos
-AWS
+##### Rails Web Application
+##### Ruby 2.4.0
+##### Database: PostgreSQL
+##### CRUD for vehicle entires
+##### Devise for Authentication
+##### Petergate
+##### Bootstrap
+##### Carrierwave for photos
+##### AWS
 
 ### Generate Vehicle
 name:string 
