@@ -4,9 +4,9 @@
 ##### Ruby 2.4.0
 ##### Database: PostgreSQL
 ##### CRUD for vehicle entires
-##### Devise for Authentication
-##### Petergate
-##### Bootstrap
+##### Devise for authentication
+##### Petergate for authorization
+##### Bootstrap for styles
 ##### Carrierwave for photos
 ##### AWS
 
