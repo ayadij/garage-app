@@ -19,8 +19,8 @@
         <td><%= vehicle.make %></td>
         <td><%= vehicle.model %></td>
         <td><%= link_to 'Details', vehicle %></td>
-        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-        <td><%= link_to 'Remove', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) if logged_in?(:site_admin) %></td>
+        <td><%= link_to 'Remove', vehicle, method: :delete, data: { confirm: 'Are you sure?' }  if logged_in?(:site_admin)  %></td>
       </tr>
     <% end %>
   </tbody>
