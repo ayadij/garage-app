@@ -44,7 +44,34 @@ bought_price:bigint
 * Users (Anyone with an acount)
     - view all pages
 * Non-users
-    - can only see the Landing
+    - can only see the Landing Page
 
-Navbar over all of the pages except for the Landing Page
-Copywrite on only the Landing Page
+
+---
+
+### Landing Page
+- Navbar only visible when logged in
+- Copywrite on only the Landing Page
+
+
+### Garage Page
+- Summary (name, year, make, model) displayed a
+- Actions displayed
+    - Details
+    - Edit (Admin only)
+    - Remove (Admin only)
+    - New (Admin only)
+
+
+### Vin Decoding Page
+- for now, direct link to a external vin decoding page
+
+
+---
+
+
+### Refactor
+x validate presence of name in vehicle form
+x truncate
+x friendly routes
+x send to garage page after logging in
