@@ -10,17 +10,9 @@
 
   <body>
 
-    <%= link_to "Home", root_path %>
-    <%= link_to "Garage", garage_path %>
-    <%= link_to "Vin Decoder", vin_decoder_path %>
+    <%= render "shared/nav" %>
+    <%= render "shared/session" %>
 
-
-    <% if current_user %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Register", new_user_registration_path %>
-      <%= link_to "Login", new_user_session_path %>
-    <% end %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
