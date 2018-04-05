@@ -47,3 +47,4 @@ bought_price:bigint
     - can only see the Landing
 
 Navbar over all of the pages except for the Landing Page
+Copywrite on only the Landing Page
