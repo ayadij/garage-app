@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @vehicle.name %>
-</p>
+<h1> <%= @vehicle.name %> </h1>
 
 <p>
   <strong>Model year:</strong>
@@ -65,5 +62,9 @@
   <%= @vehicle.bought_price %>
 </p>
 
+<p>
+  <strong>Added:</strong>
+  <%= distance_of_time_in_words(@vehicle.created_at, Time.now) %> ago
+</p>
 <%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
-<%= link_to 'Back', vehicles_path %>
+<%= link_to 'Back', garage_path %>

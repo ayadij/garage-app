@@ -15,10 +15,12 @@ class VehiclesController < ApplicationController
   # GET /vehicles/new
   def new
     @vehicle = Vehicle.new
+    @page_title = "My Garage | New Entry"
   end
 
   # GET /vehicles/1/edit
   def edit
+    @page_title = "My Garage | Edit Entry"
   end
 
   # POST /vehicles
