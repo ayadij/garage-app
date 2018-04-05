@@ -9,6 +9,7 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles/1
   def show
+    @page_title = "My Garage | " + @vehicle.name
   end
 
   # GET /vehicles/new
