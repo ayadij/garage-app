@@ -11,14 +11,12 @@
   <body>
 
     <%= render "shared/nav" %>
-    <%= render "shared/session" %>
-
+    <%= session_helper %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-
-
     <%= yield %>
+    
   </body>
 </html>
