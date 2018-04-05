@@ -4,6 +4,7 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   def index
     @vehicles = Vehicle.all
+    @page_title = "My Garage | Vehicles"
   end
 
   # GET /vehicles/1

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Garage</title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <%= link_to "Home", root_path %>
+    <%= link_to "Garage", garage_path %>
+    <%= link_to "Vin Decoder", vin_decoder_path %>
+
 
     <% if current_user %>
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
@@ -18,6 +21,11 @@
       <%= link_to "Register", new_user_registration_path %>
       <%= link_to "Login", new_user_session_path %>
     <% end %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+
 
     <%= yield %>
   </body>
