@@ -1,7 +1,7 @@
 module PagesHelper
 
   def copyright_generator
-    DijkwelViewTool::Renderer.copyright 'Dijkwel', 'All rights reserved'
+    DijkwelViewTool::Renderer.copyright 'Dijkwel', 'All rights reserved.'
   end
 
 end
