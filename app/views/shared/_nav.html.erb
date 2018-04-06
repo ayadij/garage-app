@@ -1,8 +1,8 @@
 <!--    TO DO
     displays nav only to logged-in users -->
 
-<% %>
+<% if !current_user.is_a?(GuestUser) %>
   <%= link_to "Home", root_path %>
   <%= link_to "Garage", garage_path %>
   <%= link_to "Vin Decoder", vin_decoder_path %>
-<% %>
+<% end %>
