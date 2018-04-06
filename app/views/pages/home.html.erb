@@ -1,4 +1,4 @@
-<!-- 
+
 <h1>Home</h1>
 
 <% if current_user.is_a?(GuestUser) %>
@@ -10,52 +10,3 @@
 
 <br><hr>
 <%= copyright_generator %>
- -->
-
-<div class="site-wrapper">
-
-  <div class="site-wrapper-inner">
-
-    <div class="cover-container">
-
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand">CZM Garage</h3>
-          <nav class="nav nav-masthead">
-            <a class="nav-link active" href="#">#</a>
-            <a class="nav-link" href="#">#</a>
-            <a class="nav-link" href="#">#</a>
-          </nav>
-        </div>
-      </div>
-
-      <div class="inner cover">
-        <h1 class="cover-heading">CZM Garage</h1>
-        <p class="lead">Keep track of all the information on the cars in your garage in one place</p>
-        <p class="lead">
-          <% if current_user.is_a?(GuestUser) %>
-            <p>Please <%= link_to "Login", new_user_session_path %> to see the rest of the site! </p>
-
-            <p>Not an account holder yet? 
-            <%= link_to "Register", new_user_registration_path %></p>
-
-          <% end %>
-
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Open Garage</a>
-        </p>
-        
-      </div>
-
-      <div class="mastfoot">
-        <div class="inner">
-          <%= copyright_generator %>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>

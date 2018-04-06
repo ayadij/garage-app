@@ -1,16 +1,16 @@
 
 @import "bootstrap";
-/*@import "gtrittrer"*/
+/*@import "gritter"*/
 
-/*
- * Globals
- */
+/* --------------- Globals --------------- */
 
-/* Links */
+/* --------------------------------- Links */
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0 .2rem .2rem rgba(0,0,0,.5);
 }
 
 /* Custom default button */
@@ -24,19 +24,29 @@ a:hover {
 }
 
 
-/*
- * Base structure
- */
+/* ----------------------------- Base structure */
+
+
 
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #e8e8e8;
+  font-family: 'Open Sans', sans-serif;
+
 }
 body {
-  color: #fff;
+  color: #383838;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .02rem .1rem rgba(0,0,0,.5);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+th {
+  font-family: 'Exo 2', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -51,21 +61,20 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+
 }
 .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* Padding for spacing */
+/* -----------------------------Padding for spacing */
 .inner {
   padding: 2rem;
 }
 
 
-/*
- * Header
- */
+/* --------------------------------- Header */
 
 .masthead {
   margin-bottom: 2rem;
@@ -107,9 +116,7 @@ body {
 }
 
 
-/*
- * Cover
- */
+/* --------------------------------- Cover */
 
 .cover {
   padding: 0 1.5rem;
@@ -120,18 +127,14 @@ body {
 }
 
 
-/*
- * Footer
- */
+/* --------------------------------- Footer */
 
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
 
 
-/*
- * Affix and center
- */
+/* Affix and center */
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
@@ -151,7 +154,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 100%; /* Must be % or px for horizontal alignment */
   }
 }
 
