@@ -3,11 +3,11 @@
     <h3 class="masthead-brand">CZM Garage</h3>
       <nav class="nav nav-masthead">
         <% if !current_user.is_a?(GuestUser) %>
-          <%= link_to "Home", root_path %>
-          <%= link_to "Garage", garage_path %>
-          <%= link_to "Vin Decoder", vin_decoder_path %>
-      <% end %>
-      <%= session_helper %>
+          <%= link_to "Home", root_path, class: "nav-link" %>
+          <%= link_to "Garage", garage_path, class: "nav-link" %>
+          <%= link_to "Vin Decoder", vin_decoder_path, class: "nav-link" %>
+        <% end %>
+        <%= session_helper %>
       </nav>
   </div>
 
