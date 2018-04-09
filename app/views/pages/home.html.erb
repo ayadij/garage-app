@@ -1,11 +1,10 @@
-
 <h1>Home</h1>
+<br>
 
 <% if current_user.is_a?(GuestUser) %>
   <p>Please <%= link_to "Login", new_user_session_path %> to see the rest of the site! </p>
 
   Not an account holder yet? 
-  <%= link_to "Register", new_user_registration_path %><br />
+  <%= link_to "Register", new_user_registration_path %>
+  <br><br><hr>
 <% end %>
-
-<br><hr>

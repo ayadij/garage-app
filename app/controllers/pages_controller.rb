@@ -4,10 +4,10 @@ class PagesController < ApplicationController
 
   def garage
     @vehicles = Vehicle.all
-    @page_title = "My Garage | Vehicles"
+    @page_title = "CZM Garage | Vehicles"
   end
 
   def vin_decoder
-    @page_title = "My Garage | Vin Decoder"
+    @page_title = "CZM Garage | Vin Decoder"
   end
 end

@@ -6,6 +6,6 @@ module DefaultPageContent
   end
 
   def set_title
-    @page_title = "My Garage"
+    @page_title = "CZM Garage"
   end
 end

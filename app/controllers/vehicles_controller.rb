@@ -5,23 +5,23 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   def index
     @vehicles = Vehicle.all
-    @page_title = "My Garage | Vehicles"
+    @page_title = "CZM Garage | Vehicles"
   end
 
   # GET /vehicles/1
   def show
-    @page_title = "My Garage | " + @vehicle.name
+    @page_title = "CZM Garage | " + @vehicle.name
   end
 
   # GET /vehicles/new
   def new
     @vehicle = Vehicle.new
-    @page_title = "My Garage | New Entry"
+    @page_title = "CZM Garage | New Entry"
   end
 
   # GET /vehicles/1/edit
   def edit
-    @page_title = "My Garage | Edit Entry"
+    @page_title = "CZM Garage | Edit Entry"
   end
 
   # POST /vehicles
