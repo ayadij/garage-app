@@ -15,13 +15,15 @@
 
   <body>
 
-    <%= render "shared/nav" %>
+    <%= render "shared/nav", location: 'top' %>
     <%= session_helper %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+    
+    <%= copyright_generator %>
     
   </body>
 </html>
