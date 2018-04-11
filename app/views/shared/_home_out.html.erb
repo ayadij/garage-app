@@ -1,0 +1,4 @@
+
+<% if !current_user.is_a?(GuestUser) %>
+  <p class="lead"><%= link_to "My Garage", garage_path, class: "btn btn-lg btn-secondary" %></p>
+<% end%>
