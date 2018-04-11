@@ -19,7 +19,7 @@ a:hover {
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: #EB9605;
   border: .05rem solid #fff;
 }
 
@@ -38,11 +38,12 @@ body {
 body {
   color: #383838;
   text-align: center;
-  text-shadow: 0 .02rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .01rem .01rem rgba(0,0,0,.5);
 }
 
 h1, h2, h3, h4 {
     font-family: 'Exo 2', sans-serif;
+    margin-bottom: 35px;
 }
 
 th {
@@ -110,6 +111,7 @@ th {
 @media (min-width: 40em) {
   .masthead-brand {
     float: left;
+    margin: 0 0 0 -45px;
   }
   .nav-masthead {
     float: right;
@@ -124,8 +126,11 @@ th {
 }
 .cover .btn-lg {
   padding: .45rem;
-  margin: 1.75rem;
+  margin: .75rem;
   font-weight: bold;
+}
+.cover-heading {
+  margin: 1rem;
 }
 
 
@@ -143,6 +148,7 @@ th {
   .masthead {
     position: fixed;
     top: 0;
+    padding: 0 50px 0 0;
   }
   .mastfoot {
     position: fixed;
@@ -164,6 +170,6 @@ th {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 56rem;
   }
 }
