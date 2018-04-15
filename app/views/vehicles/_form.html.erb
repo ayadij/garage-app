@@ -1,82 +1,84 @@
-<%= form_with(model: vehicle, local: true) do |form| %>
-  <% if vehicle.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+<div class="left-al">
+  <%= form_with(model: vehicle, local: true) do |form| %>
+    <% if vehicle.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
 
-      <ul>
-      <% vehicle.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% vehicle.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :vehicle_name, autofocus:true %>
+    </div>
+
+    <div class="field">
+      <%= form.label :model_year %>
+      <%= form.text_field :model_year, id: :vehicle_model_year %>
+    </div>
+
+    <div class="field">
+      <%= form.label :make %>
+      <%= form.text_field :make, id: :vehicle_make %>
+    </div>
+
+    <div class="field">
+      <%= form.label :model %>
+      <%= form.text_field :model, id: :vehicle_model %>
+    </div>
+
+    <div class="field">
+      <%= form.label :trim_level %>
+      <%= form.text_field :trim_level, id: :vehicle_trim_level %>
+    </div>
+
+    <div class="field">
+      <%= form.label :body_style %>
+      <%= form.text_field :body_style, id: :vehicle_body_style %>
+    </div>
+
+    <div class="field">
+      <%= form.label :engine_type %>
+      <%= form.text_field :engine_type, id: :vehicle_engine_type %>
+    </div>
+
+    <div class="field">
+      <%= form.label :milage %>
+      <%= form.text_field :milage, id: :vehicle_milage %>
+    </div>
+
+    <div class="field">
+      <%= form.label :vin %>
+      <%= form.text_field :vin, id: :vehicle_vin %>
+    </div>
+
+    <div class="field">
+      <%= form.label :notes %>
+      <%= form.text_area :notes, id: :vehicle_notes %>
+    </div>
+
+    <div class="field">
+      <%= form.label :bought_date %>
+      <%= form.date_select :bought_date, id: :vehicle_bought_date %>
+    </div>
+
+    <div class="field">
+      <%= form.label :bought_milage %>
+      <%= form.text_field :bought_milage, id: :vehicle_bought_milage %>
+    </div>
+
+    <div class="field">
+      <%= form.label :bought_price %>
+      <%= form.text_field :bought_price, id: :vehicle_bought_price %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :vehicle_name, autofocus:true %>
-  </div>
-
-  <div class="field">
-    <%= form.label :model_year %>
-    <%= form.text_field :model_year, id: :vehicle_model_year %>
-  </div>
-
-  <div class="field">
-    <%= form.label :make %>
-    <%= form.text_field :make, id: :vehicle_make %>
-  </div>
-
-  <div class="field">
-    <%= form.label :model %>
-    <%= form.text_field :model, id: :vehicle_model %>
-  </div>
-
-  <div class="field">
-    <%= form.label :trim_level %>
-    <%= form.text_field :trim_level, id: :vehicle_trim_level %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body_style %>
-    <%= form.text_field :body_style, id: :vehicle_body_style %>
-  </div>
-
-  <div class="field">
-    <%= form.label :engine_type %>
-    <%= form.text_field :engine_type, id: :vehicle_engine_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :milage %>
-    <%= form.text_field :milage, id: :vehicle_milage %>
-  </div>
-
-  <div class="field">
-    <%= form.label :vin %>
-    <%= form.text_field :vin, id: :vehicle_vin %>
-  </div>
-
-  <div class="field">
-    <%= form.label :notes %>
-    <%= form.text_area :notes, id: :vehicle_notes %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bought_date %>
-    <%= form.date_select :bought_date, id: :vehicle_bought_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bought_milage %>
-    <%= form.text_field :bought_milage, id: :vehicle_bought_milage %>
-  </div>
-
-  <div class="field">
-    <%= form.label :bought_price %>
-    <%= form.text_field :bought_price, id: :vehicle_bought_price %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>

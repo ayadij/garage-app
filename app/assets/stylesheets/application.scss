@@ -68,6 +68,7 @@ td {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  padding-top: 95px; 
 
 }
 .cover-container {
@@ -177,4 +178,9 @@ td {
   .cover-container {
     width: 56rem;
   }
+}
+
+
+.left-al {
+  text-align: left;
 }

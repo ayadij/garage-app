@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  def session_helper = ''
+  def session_helper 
     if current_user.is_a?(GuestUser)
       link_to "Login", new_user_session_path, class: "nav-link"
     else
