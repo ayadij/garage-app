@@ -18,13 +18,9 @@
         <td><%= vehicle.model_year %></td>
         <td><%= vehicle.make %></td>
         <td><%= vehicle.model %></td>
-
         <td><%= link_to fa_icon('angle-double-right'), vehicle %></td>
-        
         <td><%= link_to fa_icon('pencil-square-o'), edit_vehicle_path(vehicle) if logged_in?(:site_admin)  %></td>
-
         <td><%= link_to fa_icon('trash'), vehicle, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></td>
-
       </tr>
     <% end %>
   </tbody>
