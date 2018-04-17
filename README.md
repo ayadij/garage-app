@@ -75,3 +75,8 @@ x validate presence of name in vehicle form
 x truncate
 x friendly routes
 x send to garage page after logging in
+x send to garage page after deleting an item
+x assign vehicles to users
+x //= require jquery3 on line 13 application.js
+x padding and container/cards for login and register and home page
+x make page card flow up but have top margin to protect nav
