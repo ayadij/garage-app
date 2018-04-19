@@ -80,3 +80,12 @@ x assign vehicles to users
 x //= require jquery3 on line 13 application.js
 x padding and container/cards for login and register and home page
 x make page card flow up but have top margin to protect nav
+
+
+        ``` <%= video_tag(
+              'gears.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+            ) %> ```

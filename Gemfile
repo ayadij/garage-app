@@ -56,3 +56,10 @@ gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'dijkwel_view_tool', '~> 0.1.1'
 gem 'bootstrap', '~> 4.0.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.2'
+
+
