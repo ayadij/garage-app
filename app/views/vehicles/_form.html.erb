@@ -69,7 +69,9 @@
 
 
     <div class="field">
-      <%= form.file_field :image %>
+      <label class="btn btn-primary">
+        Upload an image <%= form.file_field :image, style: 'display:none' %>
+      </label>
     </div>
 
     <div class="field">
@@ -100,7 +102,9 @@
   <div class="col-md-12">
     
     <div class="actions">
-      <%= form.submit %>
+      <label class="btn btn-primary">
+        Update vehicle <%= form.submit style: 'display:none' %>
+      </label>
     </div> 
 
   </div> 
