@@ -15,6 +15,11 @@
     </div>
     <% end %>
 
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :name %>
+    </div>
+
 
     <div class="field">
       <%= form.label :model_year %>
@@ -102,9 +107,12 @@
   <div class="col-md-12">
     
     <div class="actions">
+      <%= form.submit %>
+    <!--       
       <label class="btn btn-primary">
         Update vehicle <%= form.submit style: 'display:none' %>
-      </label>
+      </label> 
+    -->
     </div> 
 
   </div> 
