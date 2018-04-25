@@ -81,11 +81,7 @@ x send to garage page after deleting an item
 x assign vehicles to users
 x //= require jquery3 on line 13 application.js
 x padding and container/cards for login and register and home page
-x make page card flow up but have top margin to protect nav
-x make page card flow up but have top margin to protect nav
-x bottom margin for h1 h2 h3 h4
-x footer blocks buttons on garage crud pages mast foot 
-x validates_presence_of name in vehicle form
+
 
 
         ``` <%= video_tag(
