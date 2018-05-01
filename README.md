@@ -91,3 +91,8 @@ x padding and container/cards for login and register and home page
               loop: true,
               muted: true,
             ) %> ```
+
+
+
+
+$ cd Documents/code/capstone/garage
