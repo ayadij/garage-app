@@ -9,7 +9,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= js add_gritter(flash[:notice], title: "Overtime App Notification", sticky: false) %>
+
 
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Open+Sans" rel="stylesheet">
   </head>
@@ -18,7 +18,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          
+          <%= js add_gritter(flash[:notice], title: "Overtime App Notification", sticky: false) %>
 <%= video_tag(
               'gears.mp4',
               id: 'background',

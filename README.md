@@ -81,7 +81,7 @@ x send to garage page after deleting an item
 x assign vehicles to users
 x //= require jquery3 on line 13 application.js
 x padding and container/cards for login and register and home page
-
+x gritter not working...
 
 
         ``` <%= video_tag(
